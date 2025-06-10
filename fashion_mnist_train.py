@@ -24,7 +24,7 @@ model.compile(optimizer='adam',
               metrics=['accuracy'])
 
 # 訓練模型
-model.fit(x_train, y_train, epochs=5, batch_size=64, validation_split=0.1)
+model.fit(x_train, y_train, epochs=15, batch_size=64, validation_split=0.1)
 
 # 評估模型
 loss, acc = model.evaluate(x_test, y_test)
